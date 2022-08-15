@@ -1,0 +1,15 @@
+<div class="top-bar">
+    <h1>Budget Calculator</h1>
+</div>
+
+<section class="total-budget-section">
+    <h2 class="red">2005</h2>
+</section>
+
+<section class="add-items">
+    <div class="add-item-container">
+        <app-add-item style="padding: 20px;" (formSubmit)="addItem($event)"></app-add-item>
+    </div>
+</section>
+<hr style="margin-top: 0px;">
+<app-budget-item-list [budgetItems]="budgetItems"></app-budget-item-list>
